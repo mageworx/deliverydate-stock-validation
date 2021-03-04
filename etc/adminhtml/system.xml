@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="delivery_date">
+            <group id="product">
+                <field id="use_stock" translate="label comment" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label><![CDATA[Use Product Salable Quantity]]></label>
+                    <comment><![CDATA[This product allows you to hide the estimated delivery on a product if the salable quantity of this product equals or less than 0. This setting also hides the delivery date functionality on the checkout if at least one product in the cart with salable quantity equals or less than 0.]]></comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

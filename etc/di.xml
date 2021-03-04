@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Plugins -->
+    <!-- Adds validation by stock in product view block -->
+    <type name="MageWorx\DeliveryDate\Block\Product\View\EstimatedDeliveryTime">
+        <plugin name="mageworx_dd_add_stock_validation_product_view"
+                type="MageWorx\DeliveryDateStockValidation\Plugin\ProductViewValidation"
+                sortOrder="10"
+                disabled="false"/>
+    </type>
+    <!-- Preferences -->
+    <preference for="MageWorx\DeliveryDateStockValidation\Api\StockValidatorInterface"
+                type="MageWorx\DeliveryDateStockValidation\Model\StockValidator" />
+</config>
