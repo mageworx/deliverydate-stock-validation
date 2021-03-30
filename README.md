@@ -1,9 +1,9 @@
-# MageWorx Stock Validation Plugin for the Delivery Date module
+# Mageworx Stock Validation Plugin for the Delivery Date module
 The module allows you to use stock validation (using the MSI Magento module) to suggest the most correct delivery dates.
 
-**Base extension [MageWorx Delivery Date](https://www.mageworx.com/delivery-date-magento-2.html) is required*
+**Base extension [Mageworx Delivery Date](https://www.mageworx.com/delivery-date-magento-2.html) is required*
 
-## Upload the extension
+## Installation
 
 ### Upload using composer
 
@@ -16,7 +16,7 @@ The module allows you to use stock validation (using the MSI Magento module) to 
 2. Download the "Ready to paste" package from your customer's area, unzip it and upload the 'app' folder to your Magento install dir.
 
 
-## Enable the extension
+### Enable the extension
 
 1. Log in to the Magento server as, or switch to, a user who has permissions to write to the Magento file system.
 2. Go to your Magento install dir:
