@@ -38,7 +38,7 @@ class ProductViewValidation
     public function afterIsAllowedByProduct(
         \MageWorx\DeliveryDate\Block\Product\View\EstimatedDeliveryTime $subject,
         bool $result,
-        \Magento\Catalog\Api\Data\ProductInterface $product = null
+        ?\Magento\Catalog\Api\Data\ProductInterface $product = null
     ) {
         if (!$result) {
             // Do not check for products for which delivery date is already unavailable
